@@ -14,6 +14,7 @@ namespace FoodRescue.Infrastructure.Repositories
         public async Task<User> FindByUsername(string username)
         {
             var user = await _dbContext.Users
+                .Include(x=> x.Organization)
                 .FirstOrDefaultAsync(x => x.Username == username);
             return user;
         }

@@ -37,6 +37,8 @@ namespace FoodRescue.Application.Features.Auth.User
                 {
                     Id = user.Id,
                     Username = user.Username,
+                    Organization = user.Organization.Name,
+                    OrgType = user.Organization.OrgType,
                     Token = token
                 }
             };
