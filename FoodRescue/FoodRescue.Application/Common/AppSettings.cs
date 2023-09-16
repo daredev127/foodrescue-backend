@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.Application.Common
+﻿namespace FoodRescue.Application.Common
 {
     public class AppSettings
     {

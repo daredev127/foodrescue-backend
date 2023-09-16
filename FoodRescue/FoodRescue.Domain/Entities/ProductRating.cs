@@ -1,6 +1,6 @@
-﻿using Marketplace.Admin.Domain.Entities.Common;
+﻿using FoodRescue.Domain.Entities.Common;
 
-namespace Marketplace.Admin.Domain.Entities
+namespace FoodRescue.Domain.Entities
 {
     public class ProductRating : EntityBase
     {

@@ -1,18 +1,12 @@
 version: '3.4'
 
 services:
-  marketplace.admin.api:
-    image: ${DOCKER_REGISTRY-}marketplaceadminapi
+  FoodRescue.api:
+    image: ${DOCKER_REGISTRY-}foodrescueapi
     build:
       context: .
-      dockerfile: Marketplace.Admin.API/Dockerfile
+      dockerfile: FoodRescue.API/Dockerfile
 
-  marketplacedb:
+  foodrescuedb:
     image: mcr.microsoft.com/mssql/server:2017-latest
-
-  dummysaleshistoryapi:
-    image: ${DOCKER_REGISTRY-}dummysaleshistoryapi
-    build:
-      context: .
-      dockerfile: DummySalesHistoryAPI/Dockerfile
 

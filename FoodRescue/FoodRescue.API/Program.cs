@@ -1,6 +1,6 @@
-using Marketplace.Admin.API.Common;
-using Marketplace.Admin.API.Configurations;
-using Marketplace.Admin.Application.Common;
+using FoodRescue.API.Common;
+using FoodRescue.API.Configurations;
+using FoodRescue.Application.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Net;
 
-namespace Marketplace.Admin.API.Common
+namespace FoodRescue.API.Common
 {
     public class ExceptionHandlerMiddleware : IMiddleware
     {

@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.Application.Dtos
+﻿namespace FoodRescue.Application.Dtos
 {
     public class ResponseBaseDto
     {

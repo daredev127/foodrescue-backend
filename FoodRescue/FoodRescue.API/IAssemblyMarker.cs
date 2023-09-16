@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.API
+﻿namespace FoodRescue.API
 {
     public interface IAssemblyMarker
     {

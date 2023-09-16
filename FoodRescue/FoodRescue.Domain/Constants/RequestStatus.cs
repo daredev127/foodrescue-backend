@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.Domain.Constants
+﻿namespace FoodRescue.Domain.Constants
 {
     public static class RequestStatus
     {

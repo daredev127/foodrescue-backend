@@ -1,9 +1,9 @@
-﻿using Marketplace.Admin.Domain.Entities.Common;
+﻿using FoodRescue.Domain.Entities.Common;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Reflection;
 
-namespace Marketplace.Admin.API.Configurations
+namespace FoodRescue.API.Configurations
 {
     public static class SwaggerSetup
     {
@@ -14,7 +14,7 @@ namespace Marketplace.Admin.API.Configurations
                 c.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "Marketplace.Admin.Api",
+                        Title = "FoodRescue.Api",
                         Version = "v1",
                         Description = "Marketplace API",
                     });

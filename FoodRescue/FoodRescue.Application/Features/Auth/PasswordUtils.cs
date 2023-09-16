@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace Marketplace.Admin.Application.Features.Auth
+namespace FoodRescue.Application.Features.Auth
 {
     public class PasswordUtils : IPasswordUtils
     {

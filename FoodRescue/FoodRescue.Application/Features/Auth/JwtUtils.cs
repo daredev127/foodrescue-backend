@@ -1,11 +1,11 @@
-﻿using Marketplace.Admin.Application.Common;
+﻿using FoodRescue.Application.Common;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Marketplace.Admin.Application.Features.Auth
+namespace FoodRescue.Application.Features.Auth
 {
     public class JwtUtils : IJwtUtils
     {

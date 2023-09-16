@@ -1,7 +1,7 @@
-﻿using Marketplace.Admin.Domain.Entities.Common;
+﻿using FoodRescue.Domain.Entities.Common;
 using System.Linq.Expressions;
 
-namespace Marketplace.Admin.Domain.Repositories
+namespace FoodRescue.Domain.Repositories
 {
     public interface IAsyncRepository<T> where T : EntityBase
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Marketplace.Admin.Application.Common
+namespace FoodRescue.Application.Common
 {
     public interface IContext : IAsyncDisposable, IDisposable
     {

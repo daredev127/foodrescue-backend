@@ -1,10 +1,10 @@
-﻿using Marketplace.Admin.Application.Common;
-using Marketplace.Admin.Domain.Entities;
-using Marketplace.Admin.Domain.Entities.Common;
+﻿using FoodRescue.Application.Common;
+using FoodRescue.Domain.Entities;
+using FoodRescue.Domain.Entities.Common;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Marketplace.Admin.Infrastructure.Persistence.Database
+namespace FoodRescue.Infrastructure.Persistence.Database
 {
     public class DatabaseContext : DbContext, IContext
     {
@@ -17,10 +17,7 @@ namespace Marketplace.Admin.Infrastructure.Persistence.Database
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DatabaseContext).Assembly);
         }
 
-        public DbSet<AdminUser> AdminUsers { get; set; }
-        public DbSet<Buyer> Buyers { get; set; }
-        public DbSet<LogisticsStaff> LogisticsStaff { get; set; }
-        public DbSet<Seller> Sellers { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {

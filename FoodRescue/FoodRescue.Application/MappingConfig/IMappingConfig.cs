@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.Application.MappingConfig
+﻿namespace FoodRescue.Application.MappingConfig
 {
     public interface IMappingConfig
     {

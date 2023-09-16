@@ -1,7 +1,7 @@
-﻿using Marketplace.Admin.Application.Common;
+﻿using FoodRescue.Application.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace Marketplace.Admin.API.Configurations
+namespace FoodRescue.API.Configurations
 {
     public static class MigrationsSetup
     {

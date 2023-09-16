@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-namespace Marketplace.Admin.API.Configurations
+namespace FoodRescue.API.Configurations
 {
     public static class LoggingSetup
     {

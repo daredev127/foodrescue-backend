@@ -1,10 +1,10 @@
-﻿using Marketplace.Admin.Domain.Entities.Common;
-using Marketplace.Admin.Domain.Repositories;
-using Marketplace.Admin.Infrastructure.Persistence.Database;
+﻿using FoodRescue.Domain.Entities.Common;
+using FoodRescue.Domain.Repositories;
+using FoodRescue.Infrastructure.Persistence.Database;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Marketplace.Admin.Infrastructure.Repositories
+namespace FoodRescue.Infrastructure.Repositories
 {
     public class RepositoryBase<T> : IAsyncRepository<T> where T : EntityBase
     {

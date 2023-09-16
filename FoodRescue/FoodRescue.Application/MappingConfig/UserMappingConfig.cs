@@ -1,10 +1,10 @@
-﻿namespace Marketplace.Admin.Application.MappingConfig
+﻿namespace FoodRescue.Application.MappingConfig
 {
     public class UserMappingConfig : IMappingConfig
     {
         public void ApplyConfig()
         {
-            //TypeAdapterConfig<AdminUser, UserViewModel>
+            //TypeAdapterConfig<User, UserViewModel>
             //    .ForType();
         }
     }

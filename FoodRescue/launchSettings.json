@@ -4,7 +4,7 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "marketplace.admin.api": "StartDebugging",
+        "FoodRescue.api": "StartDebugging",
         "dummysaleshistoryapi": "StartDebugging"
       }
     }

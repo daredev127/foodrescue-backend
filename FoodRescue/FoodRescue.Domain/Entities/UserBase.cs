@@ -1,16 +1,16 @@
-﻿using Marketplace.Admin.Domain.Entities.Common;
+﻿using FoodRescue.Domain.Entities;
+using FoodRescue.Domain.Entities.Common;
 using System.Text.Json.Serialization;
 
-namespace Marketplace.Admin.Domain.Entities
+namespace FoodRescue.Domain.Entities
 {
-    public class UserBase : EntityBase
+    public class User : EntityBase
     {
         public string Username { get; set; }
 
         [JsonIgnore]
         public string Password { get; set; }
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public string Status { get; set; }
+        public Guid OrganizationId { get; set; }
+        public Organization Organization { get; set; }
     }
 }

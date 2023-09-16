@@ -6,19 +6,19 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["Marketplace.Admin.API/Marketplace.Admin.API.csproj", "Marketplace.Admin.API/"]
-COPY ["Marketplace.Admin.Application/Marketplace.Admin.Application.csproj", "Marketplace.Admin.Application/"]
-COPY ["Marketplace.Admin.Domain/Marketplace.Admin.Domain.csproj", "Marketplace.Admin.Domain/"]
-COPY ["Marketplace.Admin.Infrastructure/Marketplace.Admin.Infrastructure.csproj", "Marketplace.Admin.Infrastructure/"]
-RUN dotnet restore "Marketplace.Admin.API/Marketplace.Admin.API.csproj"
+COPY ["FoodRescue.API/FoodRescue.API.csproj", "FoodRescue.API/"]
+COPY ["FoodRescue.Application/FoodRescue.Application.csproj", "FoodRescue.Application/"]
+COPY ["FoodRescue.Domain/FoodRescue.Domain.csproj", "FoodRescue.Domain/"]
+COPY ["FoodRescue.Infrastructure/FoodRescue.Infrastructure.csproj", "FoodRescue.Infrastructure/"]
+RUN dotnet restore "FoodRescue.API/FoodRescue.API.csproj"
 COPY . .
-WORKDIR "/src/Marketplace.Admin.API"
-RUN dotnet build "Marketplace.Admin.API.csproj" -c Release -o /app/build
+WORKDIR "/src/FoodRescue.API"
+RUN dotnet build "FoodRescue.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Marketplace.Admin.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "FoodRescue.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Marketplace.Admin.API.dll"]
+ENTRYPOINT ["dotnet", "FoodRescue.API.dll"]

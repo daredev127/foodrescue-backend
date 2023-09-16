@@ -1,9 +1,8 @@
-﻿namespace Marketplace.Admin.Application.Common
+﻿namespace FoodRescue.Application.Common
 {
     public class UserViewModel
     {
         public string Username { get; set; }
-        public string Name { get; set; }
-        public string Status { get; set; } = "Active";
+        public string Organization { get; set; }
     }
 }

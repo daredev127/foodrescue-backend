@@ -1,4 +1,4 @@
-﻿namespace Marketplace.Admin.Application.Features.Auth
+﻿namespace FoodRescue.Application.Features.Auth
 {
     public interface IPasswordUtils
     {

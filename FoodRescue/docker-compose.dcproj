@@ -6,7 +6,7 @@
     <ProjectGuid>a4640d80-bd9a-476a-8a59-f4b04f23d955</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>marketplace.admin.api</DockerServiceName>
+    <DockerServiceName>FoodRescue.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
