@@ -17,6 +17,7 @@ namespace FoodRescue.API.Configurations
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IDonationRepository, DonationRepository>();
 
             return services;
         }

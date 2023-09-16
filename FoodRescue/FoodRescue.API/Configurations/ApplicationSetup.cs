@@ -11,6 +11,7 @@ using FoodRescue.Infrastructure.Persistence.Database;
 using MassTransit;
 using MassTransit.NewIdProviders;
 using System.Reflection;
+using FoodRescue.Application.Features.Donation.AddDonation;
 
 namespace FoodRescue.API.Configurations
 {
@@ -32,6 +33,8 @@ namespace FoodRescue.API.Configurations
             services.AddScoped<ICreateUserAccountCommandHandler, CreateUserAccountCommandHandler>();
 
             services.AddScoped<ILoginCommandHandler, LoginCommandHandler>();
+
+            services.AddScoped<IAddDonationCommandHandler, AddDonationCommandHandler>();
             
 
             return services;

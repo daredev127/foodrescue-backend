@@ -22,6 +22,7 @@ namespace FoodRescue.Infrastructure.Repositories
         public async Task<IEnumerable<User>> GetUsersBySearch(string search)
         {
             var users = await _dbContext.Users
+                .Include(x=> x.Organization)
                 .Where(x => (string.IsNullOrEmpty(search) || x.Username.Contains(search)))
                 .ToListAsync();
             return users;
