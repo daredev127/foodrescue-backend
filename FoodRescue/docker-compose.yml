@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  marketplace.admin.api:
+    image: ${DOCKER_REGISTRY-}marketplaceadminapi
+    build:
+      context: .
+      dockerfile: Marketplace.Admin.API/Dockerfile
+
+  marketplacedb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  dummysaleshistoryapi:
+    image: ${DOCKER_REGISTRY-}dummysaleshistoryapi
+    build:
+      context: .
+      dockerfile: DummySalesHistoryAPI/Dockerfile
+
